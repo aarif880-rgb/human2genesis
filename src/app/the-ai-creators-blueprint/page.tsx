@@ -13,7 +13,7 @@ import { LandingFinalCTA }     from "@/components/sections/landing/LandingFinalC
 export const metadata: Metadata = {
   title: "The AI Creator's Blueprint — Human 2.0 Genesis",
   description:
-    "Four proprietary frameworks. One AI operating system. Stop using AI like a beginner — learn how operators actually use it. Eid Special: ৳199.",
+    "Four proprietary frameworks. One AI operating system. Stop using AI like a beginner — learn how operators actually use it. Launch Special: ৳199.",
 };
 
 export default function BlueprintPage() {
