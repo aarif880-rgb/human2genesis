@@ -16,7 +16,7 @@ export function LandingFinalCTA() {
           Learn AI Like an Operator.
         </h2>
         <p className="text-base text-text-secondary font-light max-w-md mx-auto mb-10">
-          Four frameworks. Thirty prompts. One operating system. ৳{PRODUCT.price} — Eid Special.
+          Four frameworks. Thirty prompts. One operating system. ৳{PRODUCT.price} — Launch Special.
         </p>
 
         <a
