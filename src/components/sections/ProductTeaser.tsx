@@ -72,7 +72,7 @@ export function ProductTeaser() {
               <div className="text-sm text-text-tertiary font-light">
                 <span className="text-accent-gold font-semibold text-base">৳{PRODUCT.price}</span>
                 <span className="line-through ml-2 text-text-tertiary">৳{PRODUCT.originalPrice}</span>
-                <span className="ml-2">Eid Special</span>
+                <span className="ml-2">Launch Special</span>
               </div>
             </div>
           </div>
