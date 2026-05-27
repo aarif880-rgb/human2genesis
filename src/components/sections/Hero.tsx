@@ -36,7 +36,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-400">
           <Link
-            href="/the-ai-creators-blueprint"
+            href="/the-ai-creators-blueprint#payment"
             className="inline-flex items-center gap-2 text-base font-semibold px-8 py-4 rounded-[10px] bg-gradient-accent text-white shadow-glow-blue hover:shadow-glow-blue-lg hover:-translate-y-px transition-all duration-200"
           >
             Get Instant Access
