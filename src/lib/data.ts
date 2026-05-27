@@ -6,7 +6,7 @@ export const PRODUCT = {
   price:         199,
   originalPrice: 299,
   currency:      "BDT",
-  urgency:       "Eid Launch Offer",
+  urgency:       "Launch Offer",
   whatsapp:      "https://wa.me/8801303570330?text=Hi%20Human%202.0%20Genesis%2C%20I%20completed%20payment%20for%20The%20AI%20Creator%27s%20Blueprint.",
   bkashNumber:   "01303570330",
   support:       "https://wa.me/8801303570330",
