@@ -25,7 +25,7 @@ export function FinalCTA() {
         <p className="text-sm text-text-tertiary mb-12">
           <span className="text-accent-gold font-semibold text-lg">৳{PRODUCT.price}</span>
           <span className="line-through ml-2">৳{PRODUCT.originalPrice}</span>
-          <span className="ml-2">· Eid Special Offer</span>
+          <span className="ml-2">· Launch Special Offer</span>
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
