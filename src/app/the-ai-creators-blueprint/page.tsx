@@ -9,7 +9,7 @@ import { LandingWhoItsFor }    from "@/components/sections/landing/LandingWhoIts
 import { LandingPayment }      from "@/components/sections/landing/LandingPayment";
 import { LandingFAQ }          from "@/components/sections/landing/LandingFAQ";
 import { LandingFinalCTA }     from "@/components/sections/landing/LandingFinalCTA";
-
+import { EbookPreview } from "@/components/sections/landing/EbookPreview";
 export const metadata: Metadata = {
   title: "The AI Creator's Blueprint — Human 2.0 Genesis",
   description:
@@ -22,6 +22,7 @@ export default function BlueprintPage() {
       <Navbar />
       <main>
         <LandingHero />
+        <EbookPreview />
         <LandingProblem />
         <LandingWhatsInside />
         <LandingFrameworks />
