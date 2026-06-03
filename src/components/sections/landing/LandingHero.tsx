@@ -9,6 +9,7 @@ export function LandingHero() {
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto">
+        {/* Urgency badge */}
         <div className="inline-flex items-center gap-2.5 bg-accent-gold/10 border border-accent-gold/30 rounded-full px-3.5 py-1.5 mb-8">
           <span className="w-1.5 h-1.5 bg-accent-gold rounded-full animate-pulse-dot" />
           <span className="text-2xs font-semibold tracking-widest uppercase text-accent-gold">
@@ -16,36 +17,47 @@ export function LandingHero() {
           </span>
         </div>
 
-        <h1 className="font-display font-extrabold leading-none tracking-tighter mb-6"
-            style={{ fontSize: "clamp(36px, 6vw, 68px)" }}>
-          A System to Think and<br />
-          <span className="text-gradient-accent">Operate with AI.</span>
+        {/* Mirror Tone Headline */}
+        <h1
+          className="font-display font-extrabold leading-tight tracking-tighter mb-4"
+          style={{ fontSize: "clamp(32px, 5.5vw, 62px)" }}
+        >
+          তুমি AI ব্যবহার করো।
+          <br />
+          <span className="text-gradient-accent">
+            কিন্তু AI তোমার জন্য কাজ করে না।
+          </span>
         </h1>
 
         <p className="text-lg md:text-xl text-text-secondary font-light max-w-xl mx-auto leading-relaxed mb-10">
-          The AI Creator&apos;s Blueprint is not an ebook. It is a structured AI operating system — four proprietary frameworks that permanently upgrade how you use AI.
+          The AI Creator&apos;s Blueprint teaches the systems behind professional
+          AI results — not just prompts. Used with ChatGPT, Claude &amp; Gemini.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
-            href="#payment"
+            href="/the-ai-creators-blueprint#payment"
             className="inline-flex items-center gap-2 text-base font-semibold px-8 py-4 rounded-[10px] bg-gradient-accent text-white shadow-glow-blue hover:shadow-glow-blue-lg hover:-translate-y-px transition-all duration-200"
           >
-            Get Instant Access — ৳{PRODUCT.price}
+            আমি Ready — ৳{PRODUCT.price}
             <ArrowRight size={18} />
           </a>
         </div>
 
-        {/* Mini proof bar */}
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        {/* Trust badges */}
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
           {[
-            "4 proprietary frameworks",
-            "30+ operator-grade prompts",
-            "Bangla AI workflow included",
-            "Delivered via WhatsApp",
+            "✓ Instant WhatsApp delivery",
+            "✓ Bangla + English",
+            "✓ Lifetime access",
+            "✓ Works with ChatGPT, Claude & Gemini",
+            "✓ 7-Day Satisfaction Guarantee",
           ].map((t) => (
-            <span key={t} className="flex items-center gap-2 text-sm text-text-tertiary">
-              <span className="w-1 h-1 bg-accent-cyan rounded-full" />
+            <span
+              key={t}
+              className="text-xs text-text-tertiary font-medium"
+            >
               {t}
             </span>
           ))}
