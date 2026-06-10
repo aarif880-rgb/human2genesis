@@ -58,8 +58,7 @@ export function LandingMirror() {
             Blueprint নাও — ৳{PRODUCT.price}
             <ArrowRight size={16} />
           </a>
-          <p className="text-xs text-text-tertiary mt-3">
-            ✓ 7-Day Guarantee &nbsp;·&nbsp; ✓ Instant WhatsApp delivery
+          <p className="text-xs text-text-tertiary mt-3"
           </p>
         </div>
       </div>
