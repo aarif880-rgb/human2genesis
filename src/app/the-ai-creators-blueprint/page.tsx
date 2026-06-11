@@ -18,10 +18,16 @@ import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { StickyMobileCTA } from "@/components/ui/StickyMobileCTA";
 import { PRODUCT } from "@/lib/data";
 
+declare global {
+  interface Window {
+    fbq: (event: string, name: string, data?: Record<string, unknown>) => void;
+  }
+}
+
 export default function BlueprintPage() {
   useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "ViewContent", {
+    if (typeof window !== "undefined" && typeof window.fbq === "function") {
+      window.fbq("track", "ViewContent", {
         content_name: "The AI Creators Blueprint",
         content_type: "product",
         value: 1.99,
