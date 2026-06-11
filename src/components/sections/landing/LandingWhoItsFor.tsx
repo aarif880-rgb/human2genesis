@@ -13,7 +13,7 @@ export function LandingWhoItsFor() {
           {WHO_ITS_FOR.map((item, i) => (
             <div key={i} className="flex items-center gap-4 p-5 bg-bg-surface border border-border-subtle rounded-[12px]">
               <span className="w-1.5 h-1.5 bg-accent-cyan rounded-full shrink-0" />
-              <p className="text-base text-text-primary font-light">{item}</p>
+              <p className="text-base text-text-primary font-light">{item.label}</p>
             </div>
           ))}
         </div>
