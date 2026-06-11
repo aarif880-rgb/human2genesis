@@ -15,7 +15,6 @@ export function LandingMirror() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-gold/2 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-2xl mx-auto">
-        {/* Heading */}
         <div className="text-center mb-10">
           <span className="text-2xs font-semibold tracking-widest uppercase text-accent-gold mb-3 block">
             Mirror Tone
@@ -28,7 +27,6 @@ export function LandingMirror() {
           </h2>
         </div>
 
-        {/* Mirror items */}
         <div className="space-y-3 mb-10">
           {MIRROR_ITEMS.map((item, i) => (
             <div
@@ -43,7 +41,6 @@ export function LandingMirror() {
           ))}
         </div>
 
-        {/* Resolution */}
         <div className="text-center bg-accent-blue/5 border border-accent-blue/20 rounded-2xl px-6 py-8">
           <p className="text-text-secondary text-sm leading-relaxed mb-2">
             যদি এর কোনো একটাও তোমার সাথে মিলে —
@@ -52,13 +49,15 @@ export function LandingMirror() {
             তুমি ঠিক জায়গায় এসেছ।
           </p>
           <a
-            href="/the-ai-creators-blueprint#payment"
+            href={PRODUCT.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold px-7 py-3.5 rounded-[10px] bg-gradient-accent text-white shadow-glow-blue hover:-translate-y-px transition-all duration-200"
           >
             Blueprint নাও — ৳{PRODUCT.price}
             <ArrowRight size={16} />
           </a>
-         <p className="text-xs text-text-tertiary mt-3">
+          <p className="text-xs text-text-tertiary mt-3">
             ✓ Instant WhatsApp delivery
           </p>
         </div>
