@@ -9,7 +9,6 @@ export function LandingHero() {
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-gold/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto">
-        {/* Urgency badge */}
         <div className="inline-flex items-center gap-2.5 bg-accent-gold/10 border border-accent-gold/30 rounded-full px-3.5 py-1.5 mb-8">
           <span className="w-1.5 h-1.5 bg-accent-gold rounded-full animate-pulse-dot" />
           <span className="text-2xs font-semibold tracking-widest uppercase text-accent-gold">
@@ -17,7 +16,6 @@ export function LandingHero() {
           </span>
         </div>
 
-        {/* Mirror Tone Headline */}
         <h1
           className="font-display font-extrabold leading-tight tracking-tighter mb-4"
           style={{ fontSize: "clamp(32px, 5.5vw, 62px)" }}
@@ -34,30 +32,26 @@ export function LandingHero() {
           AI results — not just prompts. Used with ChatGPT, Claude &amp; Gemini.
         </p>
 
-        {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
-            href="/the-ai-creators-blueprint#payment"
-            className="inline-flex items-center gap-2 text-base font-semibold px-8 py-4 rounded-[10px] bg-gradient-accent text-white shadow-glow-blue hover:shadow-glow-blue-lg hover:-translate-y-px transition-all duration-200"
+            href={PRODUCT.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-base font-semibold px-8 py-4 rounded-[10px] bg-gradient-accent text-white shadow-glow-blue hover:-translate-y-px transition-all duration-200"
           >
             আমি Ready — ৳{PRODUCT.price}
             <ArrowRight size={18} />
           </a>
         </div>
 
-        {/* Trust badges */}
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
           {[
             "✓ Instant WhatsApp delivery",
             "✓ Bangla + English",
             "✓ Lifetime access",
             "✓ Works with ChatGPT, Claude & Gemini",
-            "✓ 7-Day Satisfaction Guarantee",
           ].map((t) => (
-            <span
-              key={t}
-              className="text-xs text-text-tertiary font-medium"
-            >
+            <span key={t} className="text-xs text-text-tertiary font-medium">
               {t}
             </span>
           ))}
