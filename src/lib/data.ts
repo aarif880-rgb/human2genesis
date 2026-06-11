@@ -110,3 +110,43 @@ export const PAYMENT_STEPS = [
   },
 ];
 
+// ─── Blueprint FAQ ──────────────────────────────────────────────
+export const FAQS = [
+  {
+    q: "What exactly is The AI Creator's Blueprint?",
+    a: "It is a structured AI operating system — four proprietary frameworks that install a new way of thinking, prompting, and producing with AI. Not a prompt list. Not a tutorial. A deployable system.",
+  },
+  {
+    q: "আমি তো already ChatGPT use করি। এটা আমার জন্য কেন?",
+    a: "ChatGPT use করা আর ChatGPT deploy করা আলাদা। এই blueprint তোমাকে Consumer থেকে Operator-এ নিয়ে যাবে — structured systems তৈরি করতে শেখাবে।",
+  },
+  {
+    q: "Is this for beginners?",
+    a: "Yes. Chapter 1 is designed so that you create something real before the chapter ends. Experience first, framework second.",
+  },
+  {
+    q: "Will this become outdated?",
+    a: "No. The blueprint teaches thinking systems, not specific tools. ChatGPT, Claude, Gemini — any AI, any update — the Director mindset works across all of them.",
+  },
+  {
+    q: "Can I use Claude or Gemini instead of ChatGPT?",
+    a: "Yes. Every framework in the blueprint is tool-agnostic. It works with ChatGPT, Claude, Gemini, and any future AI tool.",
+  },
+  {
+    q: "Can I earn from this?",
+    a: "The blueprint includes freelance, content monetization, and client workflow strategies. Income depends on your application — but the direction is clear.",
+  },
+  {
+    q: "How do I receive the ebook?",
+    a: "Send bKash payment to 01303570330, then send the screenshot via WhatsApp. You will receive your PDF download link within 1–3 hours during business hours (9AM–9PM).",
+  },
+];
+
+// ─── Blueprint who it's for ─────────────────────────────────────
+export const WHO_ITS_FOR = [
+  { label: "Freelancers tired of generic AI output that clients reject" },
+  { label: "Content creators who want to produce more without losing voice" },
+  { label: "Entrepreneurs who use AI daily but feel they are underusing it" },
+  { label: "Professionals building a personal brand with AI assistance" },
+  { label: "Students preparing for an AI-first job market" },
+];
