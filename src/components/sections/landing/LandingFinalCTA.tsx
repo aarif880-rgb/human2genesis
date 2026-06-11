@@ -1,5 +1,4 @@
 import { PRODUCT } from "@/lib/data";
-import { ShieldCheck } from "lucide-react";
 
 export function LandingFinalCTA() {
   return (
@@ -34,9 +33,10 @@ export function LandingFinalCTA() {
         </a>
 
         <div className="flex items-center justify-center gap-2 text-sm text-text-tertiary font-light">
-          <ShieldCheck size={14} className="text-accent-green" />
-          No refunds after delivery. Read our{" "}
-          <a href="/refund" className="underline hover:text-text-secondary ml-1">refund policy</a>{" "}
+          No refunds after delivery.{" "}
+          <a href="/refund" className="underline hover:text-text-secondary ml-1">
+            Read our refund policy
+          </a>{" "}
           before purchasing.
         </div>
       </div>
