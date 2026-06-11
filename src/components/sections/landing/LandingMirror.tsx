@@ -58,7 +58,8 @@ export function LandingMirror() {
             Blueprint নাও — ৳{PRODUCT.price}
             <ArrowRight size={16} />
           </a>
-          <p className="text-xs text-text-tertiary mt-3"
+         <p className="text-xs text-text-tertiary mt-3">
+            ✓ Instant WhatsApp delivery
           </p>
         </div>
       </div>
