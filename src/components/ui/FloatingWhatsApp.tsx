@@ -7,14 +7,10 @@ interface FloatingWhatsAppProps {
 
 export function FloatingWhatsApp({ href, productName }: FloatingWhatsAppProps) {
   const handleClick = () => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("trackCustom", "WhatsApp_Click", {
-        product: productName,
-        location: "floating_button",
-      });
-      (window as any).fbq("track", "Lead", {
-        content_name: productName,
-      });
+    if (typeof window !== "undefined" && typeof (window as { fbq?: unknown }).fbq === "function") {
+      const fbq = (window as { fbq: (event: string, name: string, data: Record<string, string>) => void }).fbq;
+      fbq("trackCustom", "WhatsApp_Click", { product: productName, location: "floating_button" });
+      fbq("track", "Lead", { content_name: productName });
     }
   };
 
