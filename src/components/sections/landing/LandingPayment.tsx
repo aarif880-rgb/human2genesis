@@ -97,7 +97,6 @@ export function LandingPayment() {
               "✓ Instant delivery",
               "✓ Bangla + English",
               "✓ Lifetime access",
-              "✓ 7-Day Guarantee",
             ].map((t) => (
               <span key={t} className="text-xs text-text-tertiary font-medium">
                 {t}
