@@ -9,19 +9,16 @@ interface StickyMobileCTAProps {
 
 export function StickyMobileCTA({ href, label, price, productName }: StickyMobileCTAProps) {
   const handleClick = () => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("trackCustom", "WhatsApp_Click", {
-        product: productName,
-        location: "sticky_mobile_cta",
-      });
-      (window as any).fbq("track", "Lead", {
-        content_name: productName,
-      });
+    if (typeof window !== "undefined" && typeof (window as { fbq?: unknown }).fbq === "function") {
+      const fbq = (window as { fbq: (event: string, name: string, data: Record<string, string>) => void }).fbq;
+      fbq("trackCustom", "WhatsApp_Click", { product: productName, location: "sticky_mobile_cta" });
+      fbq("track", "Lead", { content_name: productName });
     }
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden px-4 pb-4 pt-2"
+    <div
+      className="fixed bottom-0 left-0 right-0 z-40 md:hidden px-4 pb-4 pt-2"
       style={{ background: "linear-gradient(to top, rgba(10,10,15,0.98) 80%, transparent)" }}
     >
       <a
